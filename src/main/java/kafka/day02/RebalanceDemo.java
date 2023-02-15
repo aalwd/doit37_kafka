@@ -29,8 +29,6 @@ public class RebalanceDemo {
 
 
 
-
-
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
 
         consumer.subscribe(Arrays.asList("nt1", "nt2"), new ConsumerRebalanceListener() {
